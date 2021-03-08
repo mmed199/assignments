@@ -8,7 +8,7 @@ import { Course } from 'src/app/courses/course.model';
 })
 export class CoursesService {
   constructor(private http: HttpClient) { }
-  uri = 'http://localhost:8010/api/courses';
+  uri = 'https://assignments-service.herokuapp.com/api/courses';
 
   addCourseWithFile(formData:FormData):Observable<any> {
     return this.http.post(this.uri, formData)

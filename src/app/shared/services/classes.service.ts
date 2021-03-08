@@ -13,7 +13,7 @@ export class ClassesService {
 
   public classeSelected:Classe = null;
 
-  uri = 'http://localhost:8010/api/classes';
+  uri = 'https://assignments-service.herokuapp.com/api/classes';
 
   getClasses(): Observable<Classe[]> {
     return this.http.get<Classe[]>(this.uri)

@@ -10,7 +10,7 @@ export class AuthService {
   public user:User
   public token:string = ""
 
-  uri = "http://localhost:8010/api/auth/"
+  uri = "https://assignments-service.herokuapp.com/api/auth/"
 
   constructor(private http: HttpClient) { }
 
