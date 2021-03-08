@@ -1,0 +1,12 @@
+<div id="navbar">
+  <ul>
+	<li><a href="/">Acceuil</a></li>
+	<li *ngIf="logedIn()"><a href="/classes/add">Ajoute une classe</a></li>
+	<li *ngIf="!logedIn()"><a href="/login">Login</a></li>
+  <li *ngIf="logedIn()" (click)="logOut()"><a href="/">Logout</a></li>
+  </ul>
+</div>
+  <router-outlet></router-outlet>
+<!--
+<app-assignments></app-assignments>
+-->
