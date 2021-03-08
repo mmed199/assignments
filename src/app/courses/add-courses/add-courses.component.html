@@ -48,7 +48,7 @@
     <div class = "addedcourses-container">
     <div *ngFor = "let addedcourse of coursesAded" class="addedCourse">
       <div>
-        <div  style="background-image: url('http://localhost:8010/static/{{addedcourse.avatar}}');" class="avatar"></div>
+        <div  style="background-image: url('https://assignments-service.herokuapp.com/static/{{addedcourse.avatar}}');" class="avatar"></div>
         <div class="addedCourse-info">
           <div>{{addedcourse.name}}</div>
           <div><b>Proffeseur : </b>{{addedcourse.professeur}}</div>
